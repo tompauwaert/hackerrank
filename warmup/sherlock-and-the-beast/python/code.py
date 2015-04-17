@@ -27,13 +27,13 @@ def run():
                 build_string(closest_mult_of_3, counter)
                 break
             
-            if closest_mult_of_3-1 > 0:
+            if closest_mult_of_3-1 >= 0:
                 sum = _5_in_mult_of_3[closest_mult_of_3-1] + _3_in_mult_of_5[counter]
                 if( sum == N):
                     build_string(closest_mult_of_3-1, counter)
                     break
 
-            if closest_mult_of_3-2 > 0:
+            if closest_mult_of_3-2 >= 0:
                 sum = _5_in_mult_of_3[closest_mult_of_3-2] + _3_in_mult_of_5[counter]
                 if( sum == N):
                     build_string(closest_mult_of_3-2, counter)
